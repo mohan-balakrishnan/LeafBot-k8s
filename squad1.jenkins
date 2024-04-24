@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Squad1 - Run Test'){
             steps{   
-               // SSH into the server
+               // SSH into the server squad1
                sshagent(['azureuser']){
                     
                     sh '''
