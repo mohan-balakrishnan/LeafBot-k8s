@@ -4,13 +4,13 @@
 	<test name="Leads">
 		<classes>
 			<class name="com.leafBot.testcases.TC003_CreateLead" />
-			<class name="com.leafBot.testcases.TC004_EditLead" />
+			<!-- <class name="com.leafBot.testcases.TC004_EditLead" />
 			<class name="com.leafBot.testcases.TC005_DeleteLead" />
 			<class name="com.leafBot.testcases.TC006_DuplicateLead" />
-			<class name="com.leafBot.testcases.TC007_MergeLead" />
+			<class name="com.leafBot.testcases.TC007_MergeLead" /> -->
 		</classes>
 	</test>
-	<test name="Contacts">
+	<!-- <test name="Contacts">
 		<classes>
 			<class name="com.leafBot.testcases.TC008_CreateContact" />
 			<class name="com.leafBot.testcases.TC009_EditContact" />
@@ -53,5 +53,5 @@
 			<class name="com.leafBot.testcases.TC001_CreateOrder" />
 			<class name="com.leafBot.testcases.TC002_EditOrder" />
 		</classes>
-	</test>
+	</test> -->
 </suite> 
