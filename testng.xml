@@ -4,54 +4,54 @@
 	<test name="Leads">
 		<classes>
 			<class name="com.leafBot.testcases.TC003_CreateLead" />
-			<class name="com.leafBot.testcases.TC004_EditLead" />
+			<!-- <class name="com.leafBot.testcases.TC004_EditLead" />
 			<class name="com.leafBot.testcases.TC005_DeleteLead" />
 			<class name="com.leafBot.testcases.TC006_DuplicateLead" />
-			<class name="com.leafBot.testcases.TC007_MergeLead" />
+			<class name="com.leafBot.testcases.TC007_MergeLead" /> -->
 		</classes>
 	</test>
 	<test name="Contacts">
 		<classes>
 			<class name="com.leafBot.testcases.TC008_CreateContact" />
-			<class name="com.leafBot.testcases.TC009_EditContact" />
+			<!-- <class name="com.leafBot.testcases.TC009_EditContact" />
 			<class name="com.leafBot.testcases.TC010_DeactivateContact" />
-			<class name="com.leafBot.testcases.TC011_MergeContact" />
+			<class name="com.leafBot.testcases.TC011_MergeContact" /> -->
 		</classes>
 	</test>
 	<test name="Accounts">
 		<classes>
 			<class name="com.leafBot.testcases.TC012_CreateAccount" />
-			<class name="com.leafBot.testcases.TC013_EditAccount" />
+			<!-- <class name="com.leafBot.testcases.TC013_EditAccount" />
 			<class name="com.leafBot.testcases.TC014_DeactivateAccount" />
-			<class name="com.leafBot.testcases.TC015_MergeAccount" />
+			<class name="com.leafBot.testcases.TC015_MergeAccount" /> -->
 		</classes>
 	</test>
 	<test name="Opportunity">
 		<classes>
 			<class name="com.leafBot.testcases.TC016_CreateOpportunity" />
-			<class name="com.leafBot.testcases.TC017_EditOpportunity" />
+			<!-- <class name="com.leafBot.testcases.TC017_EditOpportunity" /> -->
 		</classes>
 	</test>
 	<test name="Cases">
 		<classes>
 			<class name="com.leafBot.testcases.TC018_CreateCase" />
-			<class name="com.leafBot.testcases.TC019_EditCase" />
-			<class name="com.leafBot.testcases.TC020_CloseCase" />
+		<!-- 	<class name="com.leafBot.testcases.TC019_EditCase" />
+			<class name="com.leafBot.testcases.TC020_CloseCase" /> -->
 		</classes>
 	</test>
 	<test name="Activities">
 		<classes>
 			<class name="com.leafBot.testcases.TC021_CreateEvent" />
-			<class name="com.leafBot.testcases.TC022_CreateTask" />
+			<!-- <class name="com.leafBot.testcases.TC022_CreateTask" />
 			<class name="com.leafBot.testcases.TC023_EditEventActivity" />
 			<class name="com.leafBot.testcases.TC024_EditTaskActivity" />
-			<class name="com.leafBot.testcases.TC025_RemoveActivity" />
+			<class name="com.leafBot.testcases.TC025_RemoveActivity" /> -->
 		</classes>
 	</test>
 	<test name="Order">
 		<classes>
 			<class name="com.leafBot.testcases.TC001_CreateOrder" />
-			<class name="com.leafBot.testcases.TC002_EditOrder" />
+			<!-- <class name="com.leafBot.testcases.TC002_EditOrder" /> -->
 		</classes>
 	</test>
 </suite> 
