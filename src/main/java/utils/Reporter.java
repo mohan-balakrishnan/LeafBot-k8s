@@ -24,7 +24,7 @@ public abstract class Reporter {
 	public String testCaseName, testDescription, nodes, authors,category;
 	public String excelFileName;
 	
-	@BeforeSuite
+	@BeforeSuite(alwaysRun = true)
 	public void startReport() {
 		reporter = new ExtentHtmlReporter("./reports/result.html");
 		reporter.setAppendExisting(true); 
@@ -32,7 +32,7 @@ public abstract class Reporter {
 		extent.attachReporter(reporter);
 	}
 	
-    @BeforeClass
+    @BeforeClass(alwaysRun = true)
 	public void report() throws IOException {
 		test = extent.createTest(testCaseName, testDescription);
 		test.assignAuthor(authors);
@@ -65,7 +65,7 @@ public abstract class Reporter {
 	}
 
     
-    @AfterSuite
+    @AfterSuite(alwaysRun = true)
     public void stopReport() {
     	extent.flush();
     }

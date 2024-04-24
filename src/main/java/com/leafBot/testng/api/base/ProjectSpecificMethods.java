@@ -21,13 +21,13 @@ public class ProjectSpecificMethods extends SeleniumBase {
 		return DataLibrary.readExcelData(dataSheetName);
 	}	
 
-	@BeforeMethod
+	@BeforeMethod( alwaysRun = true)
 	public void beforeMethod() {
 		driver = startApp("chrome", "http://leaftaps.com/opentaps");
 		node = test.createNode(testCaseName);
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void afterMethod() {
 		close();
 	}

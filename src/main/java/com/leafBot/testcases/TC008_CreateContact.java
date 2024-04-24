@@ -8,7 +8,7 @@ import com.leafBot.testng.api.base.ProjectSpecificMethods;
 
 public class TC008_CreateContact extends ProjectSpecificMethods {
 	
-	@BeforeTest
+	@BeforeTest(alwaysRun = true)
 	public void setValues() {
 		testCaseName = "TC008_CreateContact";
 		testDescription = "Create a new Contact on LeafTaps";
@@ -17,7 +17,7 @@ public class TC008_CreateContact extends ProjectSpecificMethods {
 		dataSheetName = "TC008";
 	}
 
-	@Test(dataProvider="fetchData")
+	@Test(dataProvider="fetchData", groups = {"squad2"})
 	public void createContact(String userName, String password, String comnyName, String firstName, String lastName, String eMail){
 
 		new LoginPage(driver, node)

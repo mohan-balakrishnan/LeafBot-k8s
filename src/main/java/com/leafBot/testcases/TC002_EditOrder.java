@@ -8,7 +8,7 @@ import com.leafBot.testng.api.base.ProjectSpecificMethods;
 
 public class TC002_EditOrder extends ProjectSpecificMethods{
 
-	@BeforeTest
+	@BeforeTest(alwaysRun = true)
 	public void setData() {
 		testCaseName="TC002_EditOrder";
 		testDescription="Edit excisting Order on LeafTaps";
@@ -17,7 +17,7 @@ public class TC002_EditOrder extends ProjectSpecificMethods{
 		authors="Hari";
 	}
 
-	@Test(dataProvider="fetchData")
+	@Test(dataProvider="fetchData", groups = {"squad"})
 	public void editOrder(String userName, String password , String f_Name, String updcompanyName) throws InterruptedException{
 
 		new LoginPage(driver, node)

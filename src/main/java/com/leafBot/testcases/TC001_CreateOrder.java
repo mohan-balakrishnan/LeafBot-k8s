@@ -8,7 +8,7 @@ import com.leafBot.testng.api.base.ProjectSpecificMethods;
 
 public class TC001_CreateOrder extends ProjectSpecificMethods{	
 
-	@BeforeTest
+	@BeforeTest(alwaysRun = true	)
 	public void setData() {
 		testCaseName="TC001_CreateOrder";
 		testDescription="Create a new Order on LeafTaps";
@@ -17,7 +17,7 @@ public class TC001_CreateOrder extends ProjectSpecificMethods{
 		authors="Hari";
 	}
 
-	@Test(dataProvider="fetchData")
+	@Test(dataProvider="fetchData", groups = {"squad1"})
 	public void createOrder(String userName, String password, String comnyName, String firstName, String lastName, String eMail){
 
 		new LoginPage(driver, node)

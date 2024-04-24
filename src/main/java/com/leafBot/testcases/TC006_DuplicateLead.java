@@ -11,7 +11,7 @@ import com.leafBot.testng.api.base.ProjectSpecificMethods;
 
 public class TC006_DuplicateLead extends ProjectSpecificMethods{
 
-	@BeforeTest
+	@BeforeTest(alwaysRun = true)
 	public void setData() {
 		testCaseName="TC006_DuplicateLead";
 		testDescription="Duplicate a Lead - LeafTaps";
@@ -20,7 +20,7 @@ public class TC006_DuplicateLead extends ProjectSpecificMethods{
 		authors="Hari";
 	}
 
-	@Test(dataProvider="fetchData")
+	@Test(dataProvider="fetchData", groups = {"squad4"})
 	public void duplicateLead(String userName, String password ,String emailAddress) throws InterruptedException{
 
 		String fName=
