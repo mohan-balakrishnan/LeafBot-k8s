@@ -265,7 +265,9 @@ public class SeleniumBase extends Reporter implements Browser, Element{
 				dc.setBrowserName("chrome");
 				dc.setPlatform(Platform.LINUX);
 				options.merge(dc);
-				driver = new RemoteWebDriver(new URL("http://grid.testleaf.com:32000/wd/hub"), options);
+				String gridIp= System.getProperty("selenium.grid.ip");
+				String gridPort= System.getProperty("selenium.grid.port");
+				driver = new RemoteWebDriver(new URL("http://"+ gridIp +":"+ gridPort +"/wd/hub"), options);
 				//driver = new ChromeDriver();
 			} else if(browser.equalsIgnoreCase("firefox")) {
 				driver = new FirefoxDriver();
