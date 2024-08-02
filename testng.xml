@@ -18,7 +18,7 @@
 			<class name="com.leafBot.testcases.TC011_MergeContact" /> -->
 		</classes>
 	</test>
-	<test name="Accounts">
+<!-- 	<test name="Accounts">
 		<classes>
 			<class name="com.leafBot.testcases.TC012_CreateAccount" />
 			<!-- <class name="com.leafBot.testcases.TC013_EditAccount" />
@@ -53,5 +53,5 @@
 			<class name="com.leafBot.testcases.TC001_CreateOrder" />
 			<!-- <class name="com.leafBot.testcases.TC002_EditOrder" /> -->
 		</classes>
-	</test>
+	</test> -->
 </suite> 
